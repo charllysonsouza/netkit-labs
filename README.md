@@ -91,3 +91,17 @@ Entre em um do subdiretórios, por exemplo, __netkit-lab_arp__, abra um terminal
 lstart
 ```
 
+#### IMPORTANTE!!!
+
+Em cada laboratório há diversos arquivos com a extensão __.startup__. Para que a aplicação inicie as máquinas virtuais corretamente é necessário que para cada arquivo com esta extensão haja uma pasta equivalente com o mesmo nome. Assim, se um laboratório, por exemplo, __netkit-lab_arp__, contiver os arquivos de configurações de hosts e roteadores, pc1.startup, pc2.startup, pc3.startup, r2.startup e r1.startup, será necessário criar uma pasta vazia com o mesmo nome para cada arquivo. Caso contrário, a aplicação exibirá uma mensagem de alerta que não há máquinas virtuais para serem inicializadas.
+
+```shell
+=================================================================
+Warning: there are no virtual machines to be started.
+
+The lab has been started.
+=================================================================
+```
+
+
+
